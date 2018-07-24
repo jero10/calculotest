@@ -38,7 +38,7 @@ public static void solicitarCalc(String usuario,String cargo,int nivel){
             else {
             int niv = nivel;    
                 if (niv >= nivelMinCalc){
-                System.out.println("calculadora ingresada , es alumno y posee el nivel necesario");
+                System.out.println( usuario + " calculadora ingresada , es alumno y posee el nivel necesario");
             }
                 else {
                 System.out.println("calculadora no ingresada , no es profesor y no alcanza el nivel minimo");   
