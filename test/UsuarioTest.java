@@ -32,16 +32,21 @@ public class UsuarioTest {
     
    @Test
       public void testlogin(){
-          Usuario.login("nombreUser", "abdn");
+          assertFalse(Usuario.login("nombreUser", ""));
       }
    
     @Test
       public void testSolicitudCalc(){
-          Usuario.solicitarCalc("Jorge", "alumno",15);
+          assertTrue(Usuario.solicitarCalc("Jorge", "alumno",15));
+      }
+
+    @Test
+      public void testSolicitudCalcProf(){
+          assertTrue(Usuario.solicitarCalc("jero", "profesor",12));
       }
 
    @Test 
      public void testSolicitudCalcAlumno(){
-         Usuario.solicitarCalc("Manuel", "alumno", 4);
+         assertFalse(Usuario.solicitarCalc("Manuel", "alumno", 4));
      }
 }

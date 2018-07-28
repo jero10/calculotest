@@ -47,8 +47,8 @@ public class CalculadoraTest {
     @Test
     public void testSumaConmutativa(){
     int resultado = Calculadora.suma(1200,1014 );
-    int esperado = 2214; 
-    assertEquals(esperado, resultado);       
+    int resultado2 = Calculadora.suma(1014,1200 );
+    assertEquals(resultado, resultado2);       
     }   
     
     //restar
